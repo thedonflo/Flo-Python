@@ -2,13 +2,13 @@
 # Write a function called double_return which accepts a function and returns another function.
 # double_return should decorate a function by returning two copies of the inner function's return value inside of a list
 
-# from functools import wraps
+from functools import wraps
 
 
 def double_return(fn):
-    # @wraps(fn)
+    @wraps(fn)
     def wrapper(*args, **kwargs):
-        # build = [fn(*args, **kwargs), fn(*args, **kwargs)]
+        build = [fn(*args, **kwargs), fn(*args, **kwargs)]
         build = []
         for i in range(2):
             build.append(fn(*args, **kwargs))
