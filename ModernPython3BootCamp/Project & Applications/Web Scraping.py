@@ -47,5 +47,32 @@ while url:                  #Start loop to go through every page. You can look a
 #  It is best to store the scraped data into a file so we can pull from persistent storage instead of re-scraping
 
 quote = choice(all_quotes)      #Select a random quote. This is a dictionary as defined above
+remaining_guesses = 4           #Guess counter
 print("Here's a quote: ")
 print(quote["text"])            #Pull text quote
+# print(quote["author"])
+guess = ''
+while guess.lower() != quote["author"].lower() and remaining_guesses > 0: #loop to repeat if guesses are incorrect
+    guess = input(f"Who said this quote? Guesses remaining: {remaining_guesses}\n")
+    if guess.lower() == quote['author'].lower():                          #Check if first guess is correct
+        print("YOU GOT IT RIGHT!")
+        break
+    remaining_guesses -= 1                      #Decrement amount of guesses
+    if remaining_guesses == 3:                  #This message is initially displayed during first wrong guess
+        res = requests.get(f"{base_url}{quote['bio-link']}")   #We will provide guess for wrong guess by adding link to author's bio
+        soup = BeautifulSoup(res.text, "html.parser")
+        # print(soup.body)
+        birth_date = soup.find(class_="author-born-date").get_text()   #Pull the birth date from page
+        birth_place = soup.find(class_="author-born-location").get_text()   #Pull the birth location from page
+        print(f"Here's a hint: The author was born on {birth_date} in {birth_place}")
+    elif remaining_guesses == 2:
+        print(f"Here's a hint: The author's first name starts with: {quote['author'][0]}")      #Using index to pull first character
+    elif remaining_guesses == 1:
+        last_initial = quote['author'].split(" ")[1][0]                                     #Using split and then get corresponding index
+        print(f"Here's a hint: The author's last name starts with: {quote['author'][0]}")      #Build string for last name character
+    else:
+        print(f"Sorry you ran out of guesses. The answer was {quote['author']}")            #Final failure message that gives solutions
+
+
+# print("AFTER WHILE LOOP")
+
