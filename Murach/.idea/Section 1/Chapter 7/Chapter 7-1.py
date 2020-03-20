@@ -9,7 +9,7 @@
 # when the user wants to exit from the program.
 # 5. Test the program to 1nake sure it works. To do that, you can open the CSV file
 # with a spreadsheet progra1n like Excel.
-
+import csv
 
 def get_miles_driven():
     while True:
@@ -34,6 +34,7 @@ def main():
     print("The Miles Per Gallon application")
     print()
 
+    total_miles = []
     more = "y"
     while more.lower() == "y":
         miles_driven = get_miles_driven()
@@ -42,11 +43,14 @@ def main():
         mpg = round((miles_driven / gallons_used), 2)
         print("Miles Per Gallon:\t" + str(mpg))
         print()
-        miles_app = [miles_driven,gallons_used,mpg]
-        print(miles_app)
-
+        miles = [miles_driven,gallons_used,mpg]
+        total_miles.append(miles)
         more = input("More entries? (y or n): ")
 
+    print(total_miles)
+    with open("trips.csv", "a", newline="") as file:
+        writer = csv.writer(file)
+        writer.writerows(total_miles)
     print("Bye")
 
 if __name__ == "__main__":
