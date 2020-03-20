@@ -13,6 +13,7 @@ def get_number(prompt, low, high):
             
 def get_integer(prompt, low, high):
     while True:
+
         number = int(input(prompt))
         if number > low and number <= high:
             is_valid = True
