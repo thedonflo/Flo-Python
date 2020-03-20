@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2864777-7fbf-4778-b516-4acdfea4afb9" name="Default Changelist" comment="First time pushing code">
-      <change afterPath="$PROJECT_DIR$/.idea/Section 1/Chapter 2/Exercise 2-1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Section 1/Chapter 2/Exercise 2-2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Section 1/Chapter 2/Exercise 2-3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Section 1/Chapter 3/Exercise 3-1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Section 1/Chapter 3/Exercise 3-2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Section 1/Chapter 3/Exercise 3-3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Section 1/Chapter 4/Ex 4-1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Section 1/Chapter 4/Sample_Code.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Murach.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../100_Python_Challenges/100_Python_Challenges.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LA-Python_Intro/Deployment/notes/env.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LA-Python_Intro/LA-Python_Intro.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ModernPython3BootCamp/.idea/ModernPython3BootCamp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ZTM-Web App/ZTM-Web App.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ZTM/.idea/ZTM.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ZTM/Automation_Testing/selenium_automation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +37,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1Ppr7EgU1WqZWXOOLZOdVKCudbE" />
@@ -55,7 +52,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -69,7 +66,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Ex 4-1">
+  <component name="RunManager" selected="Python.Chapter 7-1">
+    <configuration name="Chapter 7-1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Murach" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.idea/Section 1/Chapter 7" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/.idea/Section 1/Chapter 7/Chapter 7-1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Ex 4-1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Murach" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -106,28 +125,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/.idea/Section 1/Chapter 2/Exercise 2-1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Exercise 3-1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Murach" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.idea/Section 1/Chapter 3" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/.idea/Section 1/Chapter 3/Exercise 3-1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -204,11 +201,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Chapter 7-1" />
         <item itemvalue="Python.Ex 4-1" />
         <item itemvalue="Python.Sample_Code" />
         <item itemvalue="Python.Exercise 3-3" />
         <item itemvalue="Python.Exercise 3-2" />
-        <item itemvalue="Python.Exercise 3-1" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +232,18 @@
       <workItem from="1566521240161" duration="2191000" />
       <workItem from="1566581711471" duration="617000" />
       <workItem from="1566583147046" duration="1074000" />
+      <workItem from="1584645029978" duration="324000" />
+      <workItem from="1584647142736" duration="86000" />
+      <workItem from="1584647241708" duration="5895000" />
     </task>
+    <task id="LOCAL-00001" summary="First time pushing code">
+      <created>1584704704950</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584704704950</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,18 +263,22 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
     <MESSAGE value="First time pushing code" />
     <option name="LAST_COMMIT_MESSAGE" value="First time pushing code" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Murach$Exercise_3_1.coverage" NAME="Exercise 3-1 Coverage Results" MODIFIED="1561158392144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea/Section 1/Chapter 3" />
     <SUITE FILE_PATH="coverage/Murach$Exercise_2_3.coverage" NAME="Exercise 2-3 Coverage Results" MODIFIED="1560899674425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea/Section 1/Chapter 2" />
-    <SUITE FILE_PATH="coverage/Murach$Sample_Code.coverage" NAME="Sample_Code Coverage Results" MODIFIED="1565781264002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea/Section 1/Chapter 4" />
     <SUITE FILE_PATH="coverage/Murach$Ex_4_1.coverage" NAME="Ex 4-1 Coverage Results" MODIFIED="1565836884620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea/Section 1/Chapter 4" />
+    <SUITE FILE_PATH="coverage/Murach$Sample_Code.coverage" NAME="Sample_Code Coverage Results" MODIFIED="1565781264002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea/Section 1/Chapter 4" />
+    <SUITE FILE_PATH="coverage/Murach$Chapter_7_1.coverage" NAME="Chapter 7-1 Coverage Results" MODIFIED="1584651662322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea/Section 1/Chapter 7" />
     <SUITE FILE_PATH="coverage/Murach$Exercise_2_2.coverage" NAME="Exercise 2-2 Coverage Results" MODIFIED="1560895419009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea/Section 1/Chapter 2" />
     <SUITE FILE_PATH="coverage/Murach$Exercise_3_2.coverage" NAME="Exercise 3-2 Coverage Results" MODIFIED="1561214183084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea/Section 1/Chapter 3" />
     <SUITE FILE_PATH="coverage/Murach$Exercise_3_3.coverage" NAME="Exercise 3-3 Coverage Results" MODIFIED="1561592469769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea/Section 1/Chapter 3" />
     <SUITE FILE_PATH="coverage/Murach$Exercise_2_1.coverage" NAME="Exercise 2-1 Coverage Results" MODIFIED="1560894331158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea/Section 1/Chapter 2" />
-    <SUITE FILE_PATH="coverage/Murach$Exercise_3_1.coverage" NAME="Exercise 3-1 Coverage Results" MODIFIED="1561158392144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea/Section 1/Chapter 3" />
   </component>
   <component name="masterDetails">
     <states>
