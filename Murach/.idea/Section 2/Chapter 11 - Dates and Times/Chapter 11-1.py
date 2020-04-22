@@ -24,6 +24,7 @@ def get_invoice_date():
             invoice_date_str = input("Enter the invoice date (MM/DD/YYYY): ")
             invoice_date = datetime.strptime(invoice_date_str, "%m/%d/%Y")
             return invoice_date
+
         except ValueError:
             print("Invalid date format! Try again.")
 
@@ -35,6 +36,11 @@ def main():
         invoice_date = get_invoice_date()
         print()
         invoice_date = date(invoice_date.year,invoice_date.month,invoice_date.day)
+        if invoice_date <= date.today():
+            invoice_date
+        else:
+            print("Date must be today or earlier. Try again.")
+            continue
 
         # calculate due date and days overdue
         due_date = invoice_date + timedelta(days=30)
