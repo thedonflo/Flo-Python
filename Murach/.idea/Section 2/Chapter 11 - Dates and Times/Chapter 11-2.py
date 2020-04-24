@@ -23,13 +23,15 @@ def main():
     # start timer
     input("Press Enter to start...")
     start_time = datetime.now()
-    print("Start time:", start_time)
+    # print(start_time.time())
+    print("Start time:", start_time.strftime("%X.%f"))
     print()
 
     # stop timer
     input("Press Enter to stop...")
     stop_time = datetime.now()
-    print("Stop time: ", stop_time)
+    # print(stop_time.time())
+    print("Stop time: ", stop_time.strftime("%X.%f"))
     print()
 
     # calculate elapsed time
@@ -48,7 +50,11 @@ def main():
     print("ELAPSED TIME")
     if days > 0:
         print("Days:", days)
-    print("Time:", time_object)
+    # print("Time:", time_object)
+    else:
+        if hours > 0 or minutes > 0:
+            print(f"Hours/minutes: {time_object.strftime('%H:%M')}")
+        print(f"Seconds: {time_object.strftime('%S.%f')}") #%S%f
 
 if __name__ == "__main__":
     main()
