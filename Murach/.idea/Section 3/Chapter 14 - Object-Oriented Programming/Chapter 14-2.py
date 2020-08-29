@@ -1,12 +1,12 @@
-# In this exercise, you ' 11 convert the Movie List program presented in chapter 6 so
+# In this exercise, you'll convert the Movie List program presented in chapter 6 so
 # it uses objects instead of storing the data for the movie in a list.
 # Open and test the program
-# 1. In IDLE, open the movie_list. py file that's in this folder:
+# 1. In IDLE, open the movie_list.py file that's in this folder:
 # python/ exercises/ ch14 / movies
 # 2. Review the code and note how it uses a list to store the data for each movie.
 # 3. Run the code to make sure it works correctly.
 # Define a Movie object that can store the data for each movie
-#     4. Add a module named objects to the program 's folder.
+#     4. Add a module named objects to the program's folder.
 # 5. In the object module, write the code for a class named Movie that defines
 # a Movie object that stores the name and year of a movie. This class should
 #     include a getStr() method that returns the name of the movie followed by its
@@ -27,6 +27,7 @@
 # understand.
 
 #!/usr/bin/env python3
+from objects import Movie
 
 def list(movie_list):
     if len(movie_list) == 0:
@@ -35,18 +36,22 @@ def list(movie_list):
     else:
         i = 1
         for row in movie_list:
-            print(str(i) + ". " + row[0] + " (" + str(row[1]) + ")")
+        # for row in movie_list:
+            print(str(i) + ". " + row.getStr())
+            # print(str(i) + ". " + row[0] + " (" + str(row[1]) + ")")
             i += 1
         print()
 
 def add(movie_list):
     name = input("Name: ")
     year = input("Year: ")
-    movie = []
-    movie.append(name)
-    movie.append(year)
+    # movie = []
+    # movie.append(name)
+    # movie.append(year)
+    movie = Movie(name,year)
     movie_list.append(movie)
-    print(movie[0] + " was added.\n")
+    print(movie.getStr())
+    # print(movie[0] + " was added.\n")
 
 def delete(movie_list):
     number = int(input("Number: "))
@@ -54,7 +59,8 @@ def delete(movie_list):
         print("Invalid movie number.\n")
     else:
         movie = movie_list.pop(number-1)
-        print(movie[0] + " was deleted.\n")
+        print(movie.getStr())        
+        # print(movie[0] + " was deleted.\n")
 
 def display_menu():
     print("COMMAND MENU")
@@ -65,9 +71,14 @@ def display_menu():
     print()
 
 def main():
-    movie_list = [["Monty Python and the Holy Grail", 1975],
-                  ["On the Waterfront", 1954],
-                  ["Cat on a Hot Tin Roof", 1958]]
+    movie_list = [
+        Movie("Monty Python and the Holy Grail", 1975),
+        Movie("On the Waterfront", 1954),
+        Movie("Cat on a Hot Tin Roof", 1958)]
+    # movie_list = [["Monty Python and the Holy Grail", 1975],
+                #   ["On the Waterfront", 1954],
+                #   ["Cat on a Hot Tin Roof", 1958]]
+
 
     display_menu()
 

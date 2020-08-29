@@ -1,4 +1,4 @@
-# In this exercise, you'll enhance the Dice Roller pro grain by making some
+# In this exercise, you'll enhance the Dice Roller program by making some
 # improvements to its classes.
 # Open and test the program
 # 1. In IDLE, open the dice.py and dice_roller.py files that are in this folder:
@@ -6,7 +6,7 @@
 # 2. Review the code and run the program to make sure it works correctly. Note
 # that it starts by displaying an image for each of the 6 possible die values.
 # Improve the Die class
-# 3. In the Die class, modify the roll() method so it returns the _ value attribute
+# 3. In the Die class, modify the roll() method so it returns the _value attribute
 # after it sets it to a random number from 1 to 6.
 # 4. In the Die class, modify the constructor so it sets the _ value attribute by
 # calling the roll() method. This makes sure that the _ value attribute for a new
@@ -38,35 +38,30 @@ from dice import Dice, Die
 
 def main():
     print("The Dice Roller program")
-    for i in range(1, 7):
-        die = Die()
-        die.value = i
-        print(die.image)
-    # print(" _____ \n" + \
-    #       "|o   o|\n" + \
-    #       "|o   o|\n" + \
-    #       "|o___o|")
-    # print(" _____ \n" + \
-    #       "|o   o|\n" + \
-    #       "|  o  |\n" + \
-    #       "|o___o|")
-    # print(" _____ \n" + \
-    #       "|o   o|\n" + \
-    #       "|     |\n" + \
-    #       "|o___o|")
-    # print(" _____ \n" + \
-    #       "|o    |\n" + \
-    #       "|  o  |\n" + \
-    #       "|____o|")
-    # print(" _____ \n" + \
-    #       "|o    |\n" + \
-    #       "|     |\n" + \
-    #       "|____o|")
-    # print(" _____ \n" + \
-    #       "|     |\n" + \
-    #       "|  o  |\n" + \
-    #       "|_____|")
-
+    print(" _____ \n" + \
+          "|o   o|\n" + \
+          "|o   o|\n" + \
+          "|o___o|")
+    print(" _____ \n" + \
+          "|o   o|\n" + \
+          "|  o  |\n" + \
+          "|o___o|")
+    print(" _____ \n" + \
+          "|o   o|\n" + \
+          "|     |\n" + \
+          "|o___o|")          
+    print(" _____ \n" + \
+          "|o    |\n" + \
+          "|  o  |\n" + \
+          "|____o|")
+    print(" _____ \n" + \
+          "|o    |\n" + \
+          "|     |\n" + \
+          "|____o|")    
+    print(" _____ \n" + \
+          "|     |\n" + \
+          "|  o  |\n" + \
+          "|_____|")
     print()
 
     # get number of dice from user
@@ -78,13 +73,11 @@ def main():
         die = Die()
         dice.addDie(die)
 
-    while True:
+    while True:        
         # roll the dice
         dice.rollAll()
-        # print("YOUR ROLL: ", end="")
-        print("YOUR ROLL: \n")
+        print("YOUR ROLL: ")
         for die in dice.list:
-            # print(die.value, end=" ")
             print(die.image)
         print("\n")
 
@@ -95,5 +88,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
