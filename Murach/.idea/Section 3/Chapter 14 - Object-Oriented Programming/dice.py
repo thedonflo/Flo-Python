@@ -11,36 +11,36 @@ class Die:
     @property
     def image(self):
         if self.__value == 6:
-            image="_____ \n" + \
+            image=  " _____\n" + \
                     "|o   o|\n" + \
                     "|o   o|\n" + \
                     "|o___o|"
             return image
         elif self.__value == 5:
-            return "_____ \n" + \
+            return "  ____\n" + \
                    "|o   o|\n" + \
                    "|  o  |\n" + \
                    "|o___o|"
         elif self.__value == 4:
-            return "_____ \n" + \
+            return "  ____\n" + \
                    "|o   o|\n" + \
                    "|     |\n" + \
                    "|o___o|"
         elif self.__value == 3:
-            return "_____ \n" + \
+            return "  ____\n" + \
                    "|o    |\n" + \
                    "|  o  |\n" + \
                    "|____o|"
         elif self.__value == 2:
-            return "_____ \n" + \
+            return "  ____\n" + \
                    "|o    |\n" + \
                    "|     |\n" + \
                    "|____o|"
         elif self.__value == 1:
-            return "_____ \n" + \
+            return  " ____\n" + \
                    "|     |\n" + \
                    "|  o  |\n" + \
-                   "|_____|"
+                   "|____|"
                 
     @value.setter
     def value(self, value):
