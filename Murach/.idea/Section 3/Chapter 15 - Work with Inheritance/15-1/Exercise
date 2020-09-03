@@ -1,0 +1,42 @@
+Open and test the program
+1. In IDLE, open the objects.py and product_ viewer.py files in this folder:
+python/ exercises/ ch15 / product_viewer
+2. Review the code and run the progra1n to 1nake sure it works correctly. Note
+that the Movie class displays the for1nat, which is DVD, as part of the na1ne of
+the product.
+Improve the Movie and Book classes
+3. In the Movie class, add an attribute na1ned for1nat that stores the for1nat of the
+product. For exa1nple, the for1nat could be DVD, strea1ning, and so on.
+4. In the product_ viewer 1nodule, 1nodify the code that creates the Movie object
+so it stores "DVD" as the for1nat attribute instead of appending this data to
+the end of the na1ne attribute. Then, 1nodify the code that displays the Movie
+object, so it displays the for1nat on a separate line, after the year of the 1novie.
+5. Repeat steps 3 and 4 for the Book class. You can use "Hardcover" as the
+for1nat for the book. Or, if you prefer, you can specify a different type of book
+for1nat such as "Paperback" or "ebook".
+Add an Album class
+6. In the objects 1nodule, add a class na1ned Albu1n that inherits the Product
+class. The Albu1n class should add two attributes: one for storing the artist and
+another for storing the for1nat.
+7. In the product_ viewer.py file, 1nodify the code that creates the objects so it
+includes a fo urth object, an Albu1n object. This object should contain the
+data for a 1nusic albu1n that you like. Then, add code that displays the Albu1n
+object as shown at the beginning of this exercise.
+Add a Media class
+8. In the objects 1nodule, add a class na1ned Media that inherits the Product
+class. This class should add a for1nat attribute to the Product class.
+9. Modify the Movie, Book, and Albu1n classes so they inherit the Media class,
+not the Product class. This should create a class hierarchy that looks like this:
+Product
+Media
+Movie
+Book
+Album
+10. Modify the Movie, Book, and Albu1n classes so the constructor of each class
+accepts a for1nat argu1nent and passes that argu1nent on to the constructor of
+the Media class. In other words, these classes should set the for1nat attribute
+by calling the constructor of the Media class. Note how this reduces code
+duplication.
+11. In the product_ viewer.py file, 1nodify the code that displays the products so
+it only displays the for1nat attribute for Media objects. Note how this reduces
+code duplication.
