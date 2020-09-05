@@ -1,0 +1,33 @@
+In this exercise, you '11 work with a Book object that uses an Authors object to
+store one or more Author objects.
+Open and test the program
+1. In IDLE, open the objects.py and authors_test.py files that are in this folder:
+python/ exercises/ ch15 / authors
+2. Review the code and note how the Book object uses an Authors object to store
+one or more Authors.
+3. Run the code to see how it works. At this point, it doesn 't display the book or
+author infonnation correctly, but you '11 fix that later in this exercise.
+Improve the Author, Authors, and Book classes
+4. In the Author class, add a _ str_ () method that returns the first and last name
+of the author, separated by a space.
+5. In the Authors class, add a _ str_ () method that returns the name of each
+author, separating multiple authors with a comma and a space.
+6. In the Book class, add a _ str_ () method that returns the title of the book,
+followed by the word "by" and one or more authors, with each author
+separated by a comma.
+7. Run the authors_tester module again. This time, it should display the correct
+data for the book and author information.
+Make sure the program works correctly for a single author
+8. In the authors_tester module, comrnent out the statement that adds the second
+author. Then, run the module again. This should work, but the last line says
+"Authors" where it should say "Author".
+9. Modify the code so it uses the count property of the Authors object to display
+the correct label for the author or authors depending on the number of authors
+for the book.
+Define and use an iterator for the Authors object
+10. In the Authors class, add the _ iter_ () and _ next_ () methods that make it
+possible to use a for statement to loop through all Author objects stored in the
+Authors object.
+11. In the authors_tester module, add a for statement that loops through each
+author in the Authors object and prints each author to the console. When
+you 're done, running this module should display this data to the console:
