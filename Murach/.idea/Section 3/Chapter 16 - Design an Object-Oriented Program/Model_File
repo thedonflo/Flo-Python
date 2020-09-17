@@ -1,0 +1,27 @@
+1. Identify the data attributes.
+Personal
+Business
+
+2. Subdivide each attribute into its smallest useful components.
+
+3. Identify the classes by sorting the data attributes into categories.
+
+
+4. Identify the methods by drawing a UML diagram for the class. To do that, you
+can use a software tool (many are available for free), or you can sketch the
+diagram on a piece of paper.
+
+
+5. Refine the classes, attributes, and methods. When you 're done, you should be
+ready to start coding and testing the business objects for the program.
+
+Personal
+
+Business
+
+Add List
+
+Remove List
+
+Add Task in List
+Remove Task in List
